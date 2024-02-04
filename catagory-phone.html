@@ -14,51 +14,80 @@
   <body class="user-select-none">
     <!-- Start Coding Here-->
     <!-- Nav Bar Section-->
-    <nav class="navbar navbar-expand-lg bg-transparent shadow-sm">
-        <div class="container-fluid">
-          <a class="navbar-brand rounded-3" href="#">
-            <img src="Apple3 logo.png" height="80px">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-3 fw-normal fs-5" >
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item mx-3 fw-normal fs-5">
-                <a class="nav-link" href="catagory.html"> Catagory</a>
-              </li>
-              <li class="nav-item mx-3 fw-normal fs-5">
-                <a class="nav-link" href="product.html"> Product</a>
-              </li>
-              <li class="nav-item mx-3 fw-normal fs-5">
-                <a class="nav-link" href="contact.html"> Contact</a>
-              </li>
-            </ul>
-            <div class="d-none d-lg-block mx-3">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 text-muted search" type="search" placeholder="Search Something..." aria-label="Search">
-                    <button class="btn btn-outline-primary search-btn" type="submit">Search</button>
-                  </form>
-            </div>
-            
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm  nav">
+      <div class="container-fluid mx-3 ">
+        <div class="navbar-brand " href="#">
+          <img class="photo" src="Apple3 logo.png" height="80px">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3 fw-normal fs-5" >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item mx-3 fw-normal fs-5">
+              <a class="nav-link" href="catagory.html"> Catagory</a>
+            </li>
+            <li class="nav-item mx-3 fw-normal fs-5">
+              <a class="nav-link" href="product.html"> Product</a>
+            </li>
+            <li class="nav-item mx-3 fw-normal fs-5">
+              <a class="nav-link" href="contact.html"> Contact</a>
+            </li>
+          </ul>
+          <div class="d-none d-lg-block mx-3">
+              <form action="order.html" class="d-flex" role="search">
+                  <input class="form-control me-2 text-muted search"  type="search" placeholder="Search Something..." aria-label="Search">
+                  <button class="btn btn-outline-dark search-btn text-white" type="submit">Search</button>
+                </form>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+          <!-- Mobile view for nav hide scroll down -->
+          <nav class="navbar navbar-dark bg-dark  nav2 ">
+            <div class="container-fluid">
+              <a class="navbar-brand " href="#"><img class="photo" src="Apple3 logo.png" height="80px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Our Shop</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link "  href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="catagory.html">Catagory</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link "  href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3 " role="search">
+                    <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-white search-btn text-white" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <!-- /Mobile view for nav hide scroll down -->
       <!-- Nav Bar Section-->
 
-      <!-- Mobile View Search Bar-->
-      <div class="container-fluid product-search d-md-none d-sm-block p-4">
-        <h2 class="text-white text-center p-3">Product Of Catagory Name</h2>
-      </div>
-      <!-- Mobile View Search Bar-->
-
       <!-- Product Section-->
-      <div class="container p-3">
+      <div class="container  mt-5">
         <br/>
-        <h2 class="text-center text-white d-none d-lg-block">Product on iPhone</h2>
+        <h2 class="text-center text-white  d-lg-block mt-5">Product on iPhone</h2>
         <br/><br/>
           <select name="Price">
           <option value="Price">High to Low</option>
@@ -72,17 +101,31 @@
                   <img src="Photo/IMG_6627.WEBP" class="rounded-4" width="200">
                 </div>
                   <div class="p-3">
-                    <h4>i Phone-15 Pro max<br/>(Dual Sim)</h4>
+                    <h4>i Phone-15 Pro max (Dual)</h4>
                     <p>MMK 5,200,000</p>
                     <p class="text-muted">
-                      <input type="radio" name="color" value="Black"> Black
-                      <!-- <input type="radio" name="color" value="Blue">  Blue -->
-                      <input type="radio" name="color" value="White"> White
-                      <input type="radio" name="color" value="Gray">  Gray
+                        
+
+                      <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                      <label class="btn btn-secondary" for="option1">Black</label>
+
+                      <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                      <label class="btn btn-secondary" for="option2">White</label>
+
+                      <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                      <label class="btn btn-secondary" for="option3">Gray</label>
+
+
                     </p>
                     <p class="">
-                      <input type="radio" value="256" name="Gb">256Gb
-                      <input type="radio" value="512" name="Gb">512Gb
+                      <!-- <input type="radio" class="btn-check" name="options1" id="option3" autocomplete="off" checked> -->
+                      <!-- <label class="btn btn-secondary" for="option3">128Gb</label> -->
+
+                      <input type="radio" class="btn-check" name="options1" id="option4" autocomplete="off">
+                      <label class="btn btn-secondary" for="option4">256Gb</label>
+
+                      <input type="radio" class="btn-check" name="options1" id="option5" autocomplete="off">
+                      <label class="btn btn-secondary" for="option5">512Gb</label>
                     </p>
                     <a href="order.html" class="btn btn-primary w-40 text-decoration-none"> Order Now</a>
                   </div>
@@ -95,17 +138,31 @@
                     <img src="Photo/IMG_6627.WEBP" class="rounded-4" width="200">
                   </div>
                     <div class="p-3">
-                      <h4>i Phone-15 Pro max<br/>(eSim)</h4>
+                      <h4>i Phone-15 Pro max (eSim)</h4>
                       <p>MMK 4,900,000</p>
                       <p class="text-muted">
-                        <input type="radio" name="color" value="Black"> Black
-                        <input type="radio" name="color" value="Blue">  Blue
-                        <!-- <input type="radio" name="color" value="White"> White -->
-                        <input type="radio" name="color" value="Gray">  Gray
+                        
+
+                        <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option6">Black</label>
+  
+                        <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
+                        <label class="btn btn-secondary" for="option7">Blue</label>
+  
+                        <input type="radio" class="btn-check" name="options" id="option8" autocomplete="off">
+                        <label class="btn btn-secondary" for="option8">Gray</label>
+  
+  
                       </p>
                       <p class="">
-                        <!-- <input type="radio" value="256" name="Gb">256Gb -->
-                        <input type="radio" value="512" name="Gb">512Gb
+                        <!-- <input type="radio" class="btn-check" name="options1" id="option3" autocomplete="off" checked> -->
+                        <!-- <label class="btn btn-secondary" for="option3">128Gb</label> -->
+  
+                        <!-- <input type="radio" class="btn-check" name="options1" id="option5" autocomplete="off"> -->
+                        <!-- <label class="btn btn-secondary" for="option5">256Gb</label> -->
+ 
+                        <input type="radio" class="btn-check" name="options1" id="option9" autocomplete="off">
+                        <label class="btn btn-secondary" for="option9">512Gb</label>
                       </p>
                       <a href="order.html" class="btn btn-primary w-40 text-decoration-none"> Order Now</a>
                     </div>
@@ -118,18 +175,31 @@
                   <img src="Photo/IMG_6633.WEBP" class="rounded-4" width="230" height="200" >
                 </div>
                   <div class="p-3">
-                    <h4>iPhone-15 Pro<br/>(Dual Sim)</h4>
+                    <h4>iPhone-15 Pro (Dual Sim)</h4>
                     <p>MMK 4,500,000</p>
                     <p class="text-muted">
-                      <input type="radio" name="color" value="Black"> Black
-                      <!-- <input type="radio" name="color" value="Blue">  Blue -->
-                      <input type="radio" name="color" value="White"> White
-                      <!-- <input type="radio" name="color" value="Gray">  Gray -->
+                        
+
+                      <input type="radio" class="btn-check" name="options" id="option10" autocomplete="off" checked>
+                      <label class="btn btn-secondary" for="option10">Black</label>
+
+                      <input type="radio" class="btn-check" name="options" id="option11" autocomplete="off">
+                      <label class="btn btn-secondary" for="option11">White</label>
+
+                      <!-- <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off"> -->
+                      <!-- <label class="btn btn-secondary" for="option4">White</label> -->
+
+
                     </p>
                     <p class="">
-                      <!-- <input type="radio" value="128" name="Gb">128Gb -->
-                      <input type="radio" value="256" name="Gb">256Gb
-                      <input type="radio" value="512" name="Gb">512Gb
+                      <!-- <input type="radio" class="btn-check" name="options1" id="option3" autocomplete="off" checked> -->
+                      <!-- <label class="btn btn-secondary" for="option3">128Gb</label> -->
+
+                      <input type="radio" class="btn-check" name="options1" id="option12" autocomplete="off">
+                      <label class="btn btn-secondary" for="option12">256Gb</label>
+
+                      <input type="radio" class="btn-check" name="options1" id="option13" autocomplete="off">
+                      <label class="btn btn-secondary" for="option13">512Gb</label>
                     </p>
                     <a href="order.html" class="btn btn-primary w-40 text-decoration-none"> Order Now</a>
   
@@ -143,18 +213,31 @@
                     <img src="Photo/IMG_6633.WEBP" class="rounded-4" width="230" height="200" >
                   </div>
                     <div class="p-3">
-                      <h4>iPhone-15 Pro<br/>(eSim)</h4>
+                      <h4>iPhone-15 Pro (eSim)</h4>
                       <p>MMK 4,200,000</p>
                       <p class="text-muted">
-                        <!-- <input type="radio" name="color" value="Black"> Black -->
-                        <!-- <input type="radio" name="color" value="Blue">  Blue -->
-                        <input type="radio" name="color" value="White"> White
-                        <input type="radio" name="color" value="Gray">  Gray
+                        
+
+                        <input type="radio" class="btn-check" name="options" id="option14" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option14">Blue</label>
+  
+                        <input type="radio" class="btn-check" name="options" id="option15" autocomplete="off">
+                        <label class="btn btn-secondary" for="option15">Black</label>
+  
+                        <!-- <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off"> -->
+                        <!-- <label class="btn btn-secondary" for="option4">White</label> -->
+  
+  
                       </p>
                       <p class="">
-                        <!-- <input type="radio" value="128" name="Gb">128Gb -->
-                        <input type="radio" value="256" name="Gb">256Gb
-                        <!-- <input type="radio" value="512" name="Gb">512Gb -->
+                        <input type="radio" class="btn-check" name="options1" id="option16" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option16">128Gb</label>
+  
+                        <!-- <input type="radio" class="btn-check" name="options1" id="option5" autocomplete="off"> -->
+                        <!-- <label class="btn btn-secondary" for="option5">256Gb</label> -->
+  
+                        <input type="radio" class="btn-check" name="options1" id="option17" autocomplete="off">
+                        <label class="btn btn-secondary" for="option17">512Gb</label>
                       </p>
                       <a href="order.html" class="btn btn-primary w-40 text-decoration-none"> Order Now</a>
     
@@ -168,18 +251,31 @@
                       <img src="Photo/Iphone 15Plus.png" class="rounded-4" width="200">
                     </div>
                       <div class="p-3">
-                        <h4>i Phone-15 Plus<br/>(eSim)</h4>
+                        <h4>i Phone-15 Plus (eSim)</h4>
                       <p>MMK 3,600,000</p>
                       <p class="text-muted">
-                        <input type="radio" name="color" value="Black"> Pink
-                        <!-- <input type="radio" name="color" value="Blue">  Green -->
-                        <input type="radio" name="color" value="White"> Yellow
-                        <!-- <input type="radio" name="color" value="Gray">  Blue -->
+                        
+
+                        <input type="radio" class="btn-check" name="options" id="option18" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option18">Green</label>
+  
+                        <input type="radio" class="btn-check" name="options" id="option19" autocomplete="off">
+                        <label class="btn btn-secondary" for="option19">Blue</label>
+  
+                        <!-- <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off"> -->
+                        <!-- <label class="btn btn-secondary" for="option4">White</label> -->
+  
+  
                       </p>
                       <p class="">
-                        <!-- <input type="radio" value="128" name="Gb">128Gb -->
-                        <!-- <input type="radio" value="256" name="Gb">256Gb -->
-                        <input type="radio" value="512" name="Gb">512Gb
+                        <!-- <input type="radio" class="btn-check" name="options1" id="option3" autocomplete="off" checked> -->
+                        <!-- <label class="btn btn-secondary" for="option3">128Gb</label> -->
+  
+                        <!-- <input type="radio" class="btn-check" name="options1" id="option5" autocomplete="off"> -->
+                        <!-- <label class="btn btn-secondary" for="option5">256Gb</label> -->
+  
+                        <input type="radio" class="btn-check" name="options1" id="option20" autocomplete="off">
+                        <label class="btn btn-secondary" for="option20">512Gb</label>
                       </p>
                         <a href="order.html" class="btn btn-primary w-40 text-decoration-none"> Order Now</a>
                       </div>
@@ -192,18 +288,31 @@
                     <img src="Photo/Iphone 15Plus.png" class="rounded-4" width="200">
                   </div>
                     <div class="p-3">
-                      <h4>i Phone-15<br/>(eSim)</h4>
+                      <h4>i Phone-15 (eSim)</h4>
                     <p>MMK 3,100,000</p>
                     <p class="text-muted">
-                      <input type="radio" name="color" value="Black"> Pink
-                      <!-- <input type="radio" name="color" value="Blue">  Green -->
-                      <!-- <input type="radio" name="color" value="White"> Yellow -->
-                      <!-- <input type="radio" name="color" value="Gray">  Blue -->
+                        
+
+                      <input type="radio" class="btn-check" name="options" id="option21" autocomplete="off" checked>
+                      <label class="btn btn-secondary" for="option21">Pink</label>
+
+                      <!-- <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off"> -->
+                      <!-- <label class="btn btn-secondary" for="option2">Blue</label> -->
+
+                      <!-- <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off"> -->
+                      <!-- <label class="btn btn-secondary" for="option4">White</label> -->
+
+
                     </p>
                     <p class="">
-                      <input type="radio" value="128" name="Gb">128Gb
-                      <!-- <input type="radio" value="256" name="Gb">256Gb -->
-                      <!-- <input type="radio" value="512" name="Gb">512Gb -->
+                      <!-- <input type="radio" class="btn-check" name="options1" id="option3" autocomplete="off" checked> -->
+                      <!-- <label class="btn btn-secondary" for="option3">128Gb</label> -->
+
+                      <input type="radio" class="btn-check" name="options1" id="option22" autocomplete="off">
+                      <label class="btn btn-secondary" for="option22">256Gb</label>
+
+                      <!-- <input type="radio" class="btn-check" name="options1" id="option6" autocomplete="off"> -->
+                      <!-- <label class="btn btn-secondary" for="option6">512Gb</label> -->
                     </p>
                       <a href="order.html" class="btn btn-primary w-40 text-decoration-none"> Order Now</a>
                     </div>
@@ -219,15 +328,28 @@
                       <h4>i Phone-14 Plus</h4>
                       <p>MMK 2,940,000</p>
                       <p class="text-muted">
-                        <input type="radio" name="color" value="red"> Red
-                        <!-- <input type="radio" name="color" value="White"> White -->
-                        <input type="radio" name="color" value="Purple"> Purple
-                        <!-- <input type="radio" name="color" value="Black"> Black -->
-                        <input type="radio" name="color" value="Blue"> Blue
+                        
+
+                        <input type="radio" class="btn-check" name="options" id="option23" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option23">Yellow</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option24" autocomplete="off">
+                        <label class="btn btn-secondary" for="option24">Blue</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option25" autocomplete="off">
+                        <label class="btn btn-secondary" for="option25">White</label>
+
+
                       </p>
                       <p class="">
-                        <!-- <input type="radio" value="256" name="Gb">256Gb -->
-                        <input type="radio" value="512" name="Gb">512Gb
+                        <!-- <input type="radio" class="btn-check" name="options1" id="option3" autocomplete="off" checked> -->
+                        <!-- <label class="btn btn-secondary" for="option3">128Gb</label> -->
+
+                        <input type="radio" class="btn-check" name="options1" id="option26" autocomplete="off">
+                        <label class="btn btn-secondary" for="option26">256Gb</label>
+
+                        <!-- <input type="radio" class="btn-check" name="options1" id="option6" autocomplete="off"> -->
+                        <!-- <label class="btn btn-secondary" for="option6">512Gb</label> -->
                       </p>
                       <a href="order.html" class="btn btn-primary w-40 text-decoration-none"> Order Now</a>
     
@@ -244,16 +366,28 @@
                       <h4>i Phone-13</h4>
                       <p>MMK 2,250,000</p>
                       <p class="text-muted">
-                        <input type="radio" name="color" value="red"> Red
-                        <!-- <input type="radio" name="color" value="White"> White -->
-                        <!-- <input type="radio" name="color" value="Purple"> Purple -->
-                        <input type="radio" name="color" value="Black"> Black
-                        <!-- <input type="radio" name="color" value="Blue"> Blue -->
+                        
+
+                        <input type="radio" class="btn-check" name="options" id="option27" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option27">Red</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option28" autocomplete="off">
+                        <label class="btn btn-secondary" for="option28">Black</label>
+
+                        <input type="radio" class="btn-check" name="options" id="option29" autocomplete="off">
+                        <label class="btn btn-secondary" for="option29">Pink</label>
+
+
                       </p>
                       <p class="">
-                        <input type="radio" value="128" name="Gb">128Gb
-                        <!-- <input type="radio" value="256" name="Gb">256Gb -->
-                        <!-- <input type="radio" value="512" name="Gb">512Gb -->
+                        <input type="radio" class="btn-check" name="options1" id="option30" autocomplete="off" checked>
+                        <label class="btn btn-secondary" for="option30">128Gb</label>
+
+                        <!-- <input type="radio" class="btn-check" name="options1" id="option5" autocomplete="off"> -->
+                        <!-- <label class="btn btn-secondary" for="option5">256Gb</label> -->
+
+                        <input type="radio" class="btn-check" name="options1" id="option31" autocomplete="off">
+                        <label class="btn btn-secondary" for="option31">512Gb</label>
                       </p>
                       <a href="order.html" class="btn btn-primary w-40 text-decoration-none"> Order Now</a>
     
@@ -261,24 +395,75 @@
                   </div>
                 </div>
           </div>
+          <hr/>
         </div>
-
+        
       <!-- Product Section-->
 
       <!-- Footer Section-->
-      <div class="container-fluid text-center p-3">
-        <a href="#"><img width="96" height="96" src="https://img.icons8.com/nolan/96/facebook-new.png" alt="facebook-new"/></a>
-        <a href="#"><img width="96" height="96" src="https://img.icons8.com/nolan/96/instagram-new.png" alt="instagram-new"/></a>
-        <a href="#"><img width="96" height="96" src="https://img.icons8.com/nolan/96/twitter.png" alt="twitter"/></a>
-        <br/> <br/>
-        <p class="text-white fs-6">
-          All right reserved. Designed By
-          <br>
-          Let's Learn Programming
-        </p>
+      <div class="container-fluid text-center p-3 Footer-link">
+
+        <div class="row d-flex text-start  mx-5 footer_link_1">
+          <div class="col-4">
+            <h6 class="pb-3">SHOP AND LEARN </h6>
+           <p><a href="catagory-phone.html">iPhone</a></p>
+           <p><a href="catagory-mac.html">Mac</a></p>
+           <p><a href="catagory-ipad.html">iPad</a></p>
+           <p><a href="catagory-watch.html">Apple Watch</a></p>
+           <p><a href="catagory-airpods.html">AirPods</a></p>
+           <p><a href="catagory-accessories.html">Accessories</a></p>
+          </div>
+
+          <div class="col-4">
+            <h6 class="pb-3">SUPPORT</h6>
+            <p><a href="#">Delivery Policy</a></p>
+            <p><a href="#">Warranty Policy</a></p>
+            <p><a href="#">Trade in Policy</a></p>
+            <p><a href="#">Bank Information</a></p>
+          </div>
+
+          <div class="col-4">
+            <h6 class="pb-3">ABOUT</h6>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="catagory.html">Category</a></p>
+            <p><a href="product.html">Product</a></p>
+            <p><a href="contact.html">Contact</a></p>
+          </div>
+        </div>
+
+        <div class="row d-inline-block mb-3 ">
+          <a href="https://www.facebook.com"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/facebook--v1.png" alt="facebook--v1"/></a>
+          <a href="https://www.instagram.com"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="instagram-new"/></a>
+          <a href="https://www.twitter.com"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/twitterx.png" alt="twitterx"/></a>
+        </div>
+
+        <div class="row">
+          <p>More ways to shop:Find <span class="shop-link-color">Our shop </span>near you.Or call 09 444 2222 21</p>
+        </div>
+        <hr/>
+
+        <div class="row footer_payments">
+          <div class="col fw-bold text-start">&copy;2024 Our Shop.All Rights Reserved.</div>
+
+          <div class="col text-end">
+            <span class="mx-3 text-center">Payment option:</span>
+             <img src="Images/footer_payments_update_nov.avif" class="w-50" alt="payment option">
+          </div>
+        </div>
+      <!-- mobile view -->
+        <div class="row footer_payments_2">
+          <div class="col">
+            <span class=" text-start">Payment option:</span>
+             <p class="gy-3 mt-3"><img src="Images/footer_payments_update_nov.avif" class="w-100" alt="payment option"></p>
+          </div>
+
+          <div class="col fw-bold text-center">&copy;2024 Our Shop.All Rights Reserved.</div>
+        </div>
+        <!-- /mobile view -->
       </div>
   <!-- Footer Section-->
   <!-- End Coding Here-->
+  <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
