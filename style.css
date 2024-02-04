@@ -18,6 +18,7 @@ body{
     background: transparent;
     border: 2px solid white;
 }
+
 .nav-item a{
     color: white;
     transition: .5s ease-in-out;
@@ -82,7 +83,93 @@ body{
     transform: scale(1.1);
     z-index:2;
 }
-h5{
+h6{
     color: white;
-    font-size: 25px;
+    font-weight: bold;
 }
+.Footer-link a{
+    text-decoration: none;
+    color:white;
+    font-size:15px;
+    
+}
+
+.Footer-link a:hover{
+    color:rgb(240, 83, 26);
+    transition: 0.3s ease-in-out;
+}
+
+.Footer-link{
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(82, 92, 235)
+        #3d3b40,
+        
+    );
+    
+}
+
+.shop-link-color{
+    color:rgb(219, 9, 9);
+}
+
+/* mobile view */
+.footer_payments_2{
+    display: none;
+}
+
+.nav2{display: none;}
+
+@media (max-width:717px) {
+    .footer_payments{display: none;}
+    .footer_payments_2{
+        display: block;
+
+    }
+    .nav{display: none;}
+    .nav2{display: block}
+}
+
+@media (max-width:1024px) {
+    .nav{display: none;}
+    .nav2{display: block;}
+}
+
+
+/* navbar hide */
+.nav,.nav2{
+    width:100%;
+    height: 80px;
+    position: fixed;
+    top:0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  
+    transition: transform 0.2s;
+}
+
+.nav2{
+    height: 100px;
+}
+
+.nav--hidden{
+    transform: translateY(calc(-1 * 80px));
+    
+}
+
+.nav---hidden{
+    transform: translateY(calc(-1 * 100px));
+}
+
+ /* .nav,.nav2{
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(61, 59, 64),
+        #525ceb );
+    
+}  */
+ 
+
+
+
