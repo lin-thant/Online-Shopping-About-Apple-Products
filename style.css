@@ -169,75 +169,7 @@ h6{
         #525ceb );
     
 }  */
+ 
 
-/* add to cart */
-
-/* .cartContainer{
-    transition: transform .5s;
-}
-
-.icon-cart{
-    position: relative;
-} */
-
-/* cart icon */
-/* .icon-cart span{
-    display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    justify-content: center;
-    align-items: center;
-    color:white;
-    border-radius: 50%;
-    position: absolute;
-    top:60%;
-    right:-15px;
-    
-} */
-/* /cart icon */
-
-/* .cartTab {
-    width: 400px;
-    background-color: #3d3b40;
-    color:white;
-    position: fixed;
-    inset: 0 -400px 0 auto;
-    display: grid;
-    grid-template-rows: 70px 1fr 70px;
-    z-index: 10000;
-    transition: .5s;
-}
-
-body.sowCart .cartTab{
-    inset:0 0 0 auto;
-}
-
-body.showCart .container{
-    transform: translateX(-300px);
-}
-
-.cartTab h1{
-    padding:20px;
-    margin:0;
-    font-weight: 300;
-}
-
-.cartTab .cartBtn{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.cartTab .cartBtn button{
-    background-color: darkgoldenrod;
-    border:none;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-.cartTab .cartBtn .close{
-    background-color:whitesmoke;
-} */
 
 
